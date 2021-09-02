@@ -1,0 +1,129 @@
+.container-mobile {
+  max-width: 768px;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: $white-color;
+  padding: 48px 40px;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform $animation-duration $cubic-bezier;
+}
+
+.mobile-menu__close-button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  top: 10px;
+  right: 15px;
+  border: none;
+  transition: fill $animation-duration $cubic-bezier;
+}
+
+.mobile-menu__close-button:hover,
+.mobile-menu__close-button:focus {
+  fill: $accent-color;
+}
+
+.mobile-menu__link {
+  font-weight: 500;
+  font-size: 2.5em;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+  text-decoration: none;
+  transition: color $animation-duration $cubic-bezier;
+}
+
+.mobile-menu__link:hover,
+.mobile-menu__linkfocus {
+  color: $accent-color;
+}
+
+.mobile-menu__link--current {
+  color: $accent-color;
+  display: block;
+  justify-content: center;
+}
+
+.mobile-menu__contact {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.04;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $primary-text-color;
+}
+
+.mobile-menu__contact--bold {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17px;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  text-decoration: none;
+}
+
+.mobile-menu__social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  text-decoration: none;
+}
+
+.mobile-menu__page-links {
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu__link-item {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__contact-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__contact-list {
+  margin-bottom: 64px;
+}
+
+.mobile-menu__social-list {
+  display: flex;
+}
+
+.mobile-menu__social {
+  padding-right: 10px;
+}
+
+.mobile-menu__social:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-menu__social:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}

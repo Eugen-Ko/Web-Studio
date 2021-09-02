@@ -1,0 +1,90 @@
+.section--bg-for-team-section {
+  background-color: $bg-for-team-section;
+}
+
+.team-member {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -30px;
+}
+
+.member__card {
+  margin: 30px 0 0 30px;
+  width: auto;
+  max-width: 450px;
+  background-color: $white-color;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.member__name {
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+.member__wrap {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.member__position,
+.member__image {
+  margin: 0;
+  width: 100%;
+  display: block;
+  line-height: 1.9;
+}
+
+.social-link {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+.social-link__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $icon-color;
+  transition: color $animation-duration $cubic-bezier,
+    background-color $animation-duration $cubic-bezier;
+}
+
+.social-link__link:hover,
+.social-link__link:focus {
+  color: $white-color;
+  background-color: $accent-color;
+}
+
+.social-link__icon {
+  fill: currentColor;
+}
+
+.social-link__box:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .member__card {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-member {
+    flex-wrap: nowrap;
+  }
+  .member__card {
+    width: calc(100% / 4 - 30px);
+  }
+}
