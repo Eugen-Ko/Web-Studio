@@ -5,7 +5,7 @@
 }
 
 .logo--light {
-  color: var(--white-color);
+  color: $white-color;
 }
 
 .footer {
@@ -63,7 +63,9 @@
 }
 
 .company-contacts__link:hover,
-.company-contacts__link:focus {
+.company-contacts__link:focus,
+.address__company:hover,
+.address__company:focus {
   color: $accent-color;
 }
 

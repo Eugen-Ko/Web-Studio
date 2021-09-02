@@ -333,7 +333,7 @@
 }
 
 .logo--light {
-  color: var(--white-color);
+  color: #ffffff;
 }
 
 .footer {
@@ -418,7 +418,9 @@
 }
 
 .company-contacts__link:hover,
-.company-contacts__link:focus {
+.company-contacts__link:focus,
+.address__company:hover,
+.address__company:focus {
   color: #2196f3;
 }
 
