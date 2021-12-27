@@ -648,16 +648,9 @@
 }
 
 .mobile-menu__link:hover,
-.mobile-menu__linkfocus {
-  color: #2196f3;
-}
-
+.mobile-menu__linkfocus,
 .mobile-menu__link--current {
   color: #2196f3;
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .mobile-menu__contact {

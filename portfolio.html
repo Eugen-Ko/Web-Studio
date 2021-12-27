@@ -1,687 +1,507 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio main page</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
 
-  <body class="page-main">
-    <!-- Header section -->
-    <header class="header-section">
-      <div class="container nav-section">
-        <a href="index.html" class="logo"
-          >Web<span class="logo--dark">Studio</span></a
-        >
-        <button
-          type="button"
-          class="nav-section__menu-button js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="40" height="40" aria-label="Open mobile menu">
-            <use
-              class="nav-section__menu-icon"
-              href="./images/icon.svg#icon-menu-open"
-            ></use>
-          </svg>
-        </button>
-        <!-- Navigation in header -->
-        <nav>
-          <ul class="nav-list list">
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="./index.html">Студия</a>
-            </li>
-            <li class="nav-list__item">
-              <a
-                class="nav-list__link nav-list__link--current"
-                href="portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio main page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
 
-        <!-- Contacts -->
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icon.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icon.svg#icon-cell"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <!-- Mobile menu section -->
-    <div
-      class="mobile-menu js-menu-container container-mobile"
-      id="mobile-menu"
-    >
-      <button class="mobile-menu__close-button js-close-menu">
-        <svg width="40" height="40" aria-label="Close mobile menu">
-          <use
-            class="mobile-menu__close-icon"
-            href="./images/icon.svg#icon-menu-close"
-          ></use>
+<body class="page-main">
+  <!-- Header section -->
+  <header class="header-section">
+    <div class="container nav-section">
+      <a href="index.html" class="logo">Web<span class="logo--dark">Studio</span></a>
+      <button type="button" class="nav-section__menu-button js-open-menu" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="Open mobile menu">
+          <use class="nav-section__menu-icon" href="./images/icon.svg#icon-menu-open"></use>
         </svg>
       </button>
-      <ul class="mobile-menu__page-links list">
-        <li class="mobile-menu__link-item">
-          <a class="mobile-menu__link" href="./index.html">Студия</a>
+      <!-- Navigation in header -->
+      <nav>
+        <ul class="nav-list list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="./index.html">Студия</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link nav-list__link--current" href="portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Contacts -->
+      <ul class="contacts list">
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16" height="12">
+              <use href="./images/icon.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a>
         </li>
-        <li class="mobile-menu__link-item">
-          <a
-            class="mobile-menu__link mobile-menu__link--current"
-            href="./portfolio.html"
-            >Портфолио</a
-          >
-        </li>
-        <li class="mobile-menu__link-item">
-          <a class="mobile-menu__link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <ul class="mobile-menu__contact-list list">
-        <li class="mobile-menu__contact-item">
-          <a class="mobile-menu__contact--bold" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-        <li class="mobile-menu__contact-item">
-          <a class="mobile-menu__contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-menu__social-list list">
-        <li class="mobile-menu__social">
-          <a class="mobile-menu__social-link" href="#">Instagram</a>
-        </li>
-        <li class="mobile-menu__social">
-          <a class="mobile-menu__social-link" href="#">Twitter</a>
-        </li>
-        <li class="mobile-menu__social">
-          <a class="mobile-menu__social-link" href="#">Facebook</a>
-        </li>
-        <li class="mobile-menu__social">
-          <a class="mobile-menu__social-link" href="#">LinkIn</a>
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+380961111111">
+            <svg class="contacts__icon" width="10" height="16">
+              <use href="./images/icon.svg#icon-cell"></use>
+            </svg>
+            +38 096 111 11 11</a>
         </li>
       </ul>
     </div>
+  </header>
+  <!-- Mobile menu section -->
+  <div class="mobile-menu js-menu-container container-mobile" id="mobile-menu">
+    <button class="mobile-menu__close-button js-close-menu">
+      <svg width="40" height="40" aria-label="Close mobile menu">
+        <use class="mobile-menu__close-icon" href="./images/icon.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu__page-links list">
+      <li class="mobile-menu__link-item">
+        <a class="mobile-menu__link" href="./index.html">Студия</a>
+      </li>
+      <li class="mobile-menu__link-item">
+        <a class="mobile-menu__link mobile-menu__link--current" href="./portfolio.html">Портфолио</a>
+      </li>
+      <li class="mobile-menu__link-item">
+        <a class="mobile-menu__link" href="#">Контакты</a>
+      </li>
+    </ul>
+    <ul class="mobile-menu__contact-list list">
+      <li class="mobile-menu__contact-item">
+        <a class="mobile-menu__contact--bold" href="tel:+380961111111">+38 096 111 11 11</a>
+      </li>
+      <li class="mobile-menu__contact-item">
+        <a class="mobile-menu__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+    <ul class="mobile-menu__social-list list">
+      <li class="mobile-menu__social">
+        <a class="mobile-menu__social-link" href="#">Instagram</a>
+      </li>
+      <li class="mobile-menu__social">
+        <a class="mobile-menu__social-link" href="#">Twitter</a>
+      </li>
+      <li class="mobile-menu__social">
+        <a class="mobile-menu__social-link" href="#">Facebook</a>
+      </li>
+      <li class="mobile-menu__social">
+        <a class="mobile-menu__social-link" href="#">LinkIn</a>
+      </li>
+    </ul>
+  </div>
 
-    <!-- Main section -->
-    <main>
-      <!-- Portfolio list-->
-      <section class="section section--portfolio">
-        <!-- Filter buttons -->
-        <div class="container">
-          <div class="filter-wrap">
-            <ul class="filter-btn list">
-              <li class="filter-btn__item">
-                <button class="filter-btn__button" type="button">Все</button>
-              </li>
-              <li class="filter-btn__item">
-                <button class="filter-btn__button" type="button">
-                  Веб-сайт
-                </button>
-              </li>
-              <li class="filter-btn__item">
-                <button class="filter-btn__button" type="button">
-                  Приложение
-                </button>
-              </li>
-              <li class="filter-btn__item">
-                <button class="filter-btn__button" type="button">Дизайн</button>
-              </li>
-              <li class="filter-btn__item">
-                <button class="filter-btn__button" type="button">
-                  Маркетинг
-                </button>
-              </li>
-            </ul>
-          </div>
+  <!-- Main section -->
+  <main>
+    <!-- Portfolio list-->
+    <section class="section section--portfolio">
+      <!-- Filter buttons -->
+      <div class="container">
+        <div class="filter-wrap">
+          <ul class="filter-btn list">
+            <li class="filter-btn__item">
+              <button class="filter-btn__button" type="button">Все</button>
+            </li>
+            <li class="filter-btn__item">
+              <button class="filter-btn__button" type="button">
+                Веб-сайт
+              </button>
+            </li>
+            <li class="filter-btn__item">
+              <button class="filter-btn__button" type="button">
+                Приложение
+              </button>
+            </li>
+            <li class="filter-btn__item">
+              <button class="filter-btn__button" type="button">Дизайн</button>
+            </li>
+            <li class="filter-btn__item">
+              <button class="filter-btn__button" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+        </div>
 
-          <!-- Project cards -->
-          <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="card-set list">
-            <li class="card">
-              <a href="#" class="card__project">
-                <div class="card__thumb">
-                  <picture>
-                    <source
-                      srcset="
+        <!-- Project cards -->
+        <h1 class="visually-hidden">Портфолио</h1>
+        <ul class="card-set list">
+          <li class="card">
+            <a href="#" class="card__project">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="
                         ./images/technocrack-mobile.jpg    1x,
                         ./images/technocrack-mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(max-width: 767px)" />
+                  <source srcset="
                         ./images/technocrack-tablet.jpg    1x,
                         ./images/technocrack-tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="
                         ./images/technocrack-desktop.jpg    1x,
                         ./images/technocrack-desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <img
-                      src="./images/technocrack-desctop.jpg"
-                      alt="на ноутбуке открыт сайт"
-                      class="card__image"
-                    />
-                  </picture>
-                  <p class="card__overlay">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="card__meta">
-                  <h3 class="card__title">Технокряк</h3>
-                  <p class="card__description">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="card">
-              <a href="#" class="card__project">
-                <div class="card__thumb">
-                  <picture>
-                    <source
-                      srcset="
+                      " media="(min-width: 1200px)" />
+                  <img src="./images/technocrack-desktop.jpg" alt="на ноутбуке открыт сайт" class="card__image" />
+                </picture>
+                <p class="card__overlay">
+                  Технокряк это современная площадка распространения
+                  коронавируса. Компании используют эту платформу для
+                  цифрового шпионажа и атак на защищённые сервера конкурентов.
+                </p>
+              </div>
+              <div class="card__meta">
+                <h3 class="card__title">Технокряк</h3>
+                <p class="card__description">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="card__project">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="
                         ./images/new-orlean-mobile.jpg    1x,
                         ./images/new-orlean-mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(max-width: 767px)" />
+                  <source srcset="
                         ./images/new-orlean-tablet.jpg    1x,
                         ./images/new-orlean-tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="
                         ./images/new-orlean-desktop.jpg    1x,
                         ./images/new-orlean-desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <img
-                      src="./images/new-orlean-desctop.jpg"
-                      alt="два игрока играют в баскетболл"
-                      class="card__image"
-                    />
-                  </picture>
-                  <p class="card__overlay">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quae, atque saepe. Error laudantium iure odio delectus illum
-                    recusandae quia debitis earum nesciunt sequi eos molestiae
-                    repellat obcaecati provident, tempore dolor?
-                  </p>
-                </div>
-                <div class="card__meta">
-                  <h3 class="card__title">Постер New Orlean vs Golden Star</h3>
-                  <p class="card__description">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="card">
-              <a href="#" class="card__project">
-                <div class="card__thumb">
-                  <picture>
-                    <source
-                      srcset="
+                      " media="(min-width: 1200px)" />
+                  <img src="./images/new-orlean-desktop.jpg" alt="два игрока играют в баскетболл" class="card__image" />
+                </picture>
+                <p class="card__overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quae, atque saepe. Error laudantium iure odio delectus illum
+                  recusandae quia debitis earum nesciunt sequi eos molestiae
+                  repellat obcaecati provident, tempore dolor?
+                </p>
+              </div>
+              <div class="card__meta">
+                <h3 class="card__title">Постер New Orlean vs Golden Star</h3>
+                <p class="card__description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="card__project">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="
                         ./images/seafood-mobile.jpg    1x,
                         ./images/seafood-mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(max-width: 767px)" />
+                  <source srcset="
                         ./images/seafood-tablet.jpg    1x,
                         ./images/seafood-tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="
                         ./images/seafood-desktop.jpg    1x,
                         ./images/seafood-desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <img
-                      src="./images/seafood-desctop.jpg"
-                      alt="логотип SeaFood"
-                      class="card__image"
-                    />
-                  </picture>
-                  <p class="card__overlay">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quae, atque saepe. Error laudantium iure odio delectus illum
-                    recusandae quia debitis earum nesciunt sequi eos molestiae
-                    repellat obcaecati provident, tempore dolor?
-                  </p>
-                </div>
-                <div class="card__meta">
-                  <h3 class="card__title">Ресторан SeaFood</h3>
-                  <p class="card__description">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="card">
-              <a href="#" class="card__project">
-                <div class="card__thumb">
-                  <picture>
-                    <source
-                      srcset="
+                      " media="(min-width: 1200px)" />
+                  <img src="./images/seafood-desktop.jpg" alt="логотип SeaFood" class="card__image" />
+                </picture>
+                <p class="card__overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quae, atque saepe. Error laudantium iure odio delectus illum
+                  recusandae quia debitis earum nesciunt sequi eos molestiae
+                  repellat obcaecati provident, tempore dolor?
+                </p>
+              </div>
+              <div class="card__meta">
+                <h3 class="card__title">Ресторан SeaFood</h3>
+                <p class="card__description">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="card__project">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="
                         ./images/prime-mobile.jpg    1x,
                         ./images/prime-mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(max-width: 767px)" />
+                  <source srcset="
                         ./images/prime-tablet.jpg    1x,
                         ./images/prime-tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="
                         ./images/prime-desktop.jpg    1x,
                         ./images/prime-desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <img
-                      src="./images/prime-desctop.jpg"
-                      alt="наушники"
-                      class="card__image"
-                    />
-                  </picture>
-                  <p class="card__overlay">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quae, atque saepe. Error laudantium iure odio delectus illum
-                    recusandae quia debitis earum nesciunt sequi eos molestiae
-                    repellat obcaecati provident, tempore dolor?
-                  </p>
-                </div>
-                <div class="card__meta">
-                  <h3 class="card__title">Проект Prime</h3>
-                  <p class="card__description">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="card">
-              <a href="#" class="card__project">
-                <div class="card__thumb">
-                  <picture>
-                    <source
-                      srcset="
+                      " media="(min-width: 1200px)" />
+                  <img src="./images/prime-desktop.jpg" alt="наушники" class="card__image" />
+                </picture>
+                <p class="card__overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quae, atque saepe. Error laudantium iure odio delectus illum
+                  recusandae quia debitis earum nesciunt sequi eos molestiae
+                  repellat obcaecati provident, tempore dolor?
+                </p>
+              </div>
+              <div class="card__meta">
+                <h3 class="card__title">Проект Prime</h3>
+                <p class="card__description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="card__project">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="
                         ./images/boxes-mobile.jpg    1x,
                         ./images/boxes-mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(max-width: 767px)" />
+                  <source srcset="
                         ./images/boxes-tablet.jpg    1x,
                         ./images/boxes-tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="
                         ./images/boxes-desktop.jpg    1x,
                         ./images/boxes-desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <img
-                      src="./images/boxes-desctop.jpg"
-                      alt="две короби"
-                      class="card__image"
-                    />
-                  </picture>
-                  <p class="card__overlay">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quae, atque saepe. Error laudantium iure odio delectus illum
-                    recusandae quia debitis earum nesciunt sequi eos molestiae
-                    repellat obcaecati provident, tempore dolor?
-                  </p>
-                </div>
-                <div class="card__meta">
-                  <h3 class="card__title">Проект Boxes</h3>
-                  <p class="card__description">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="card">
-              <a href="#" class="card__project">
-                <div class="card__thumb">
-                  <picture>
-                    <source
-                      srcset="
+                      " media="(min-width: 1200px)" />
+                  <img src="./images/boxes-desktop.jpg" alt="две короби" class="card__image" />
+                </picture>
+                <p class="card__overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quae, atque saepe. Error laudantium iure odio delectus illum
+                  recusandae quia debitis earum nesciunt sequi eos molestiae
+                  repellat obcaecati provident, tempore dolor?
+                </p>
+              </div>
+              <div class="card__meta">
+                <h3 class="card__title">Проект Boxes</h3>
+                <p class="card__description">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="card__project">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="
                         ./images/inspiration-mobile.jpg    1x,
                         ./images/inspiration-mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(max-width: 767px)" />
+                  <source srcset="
                         ./images/inspiration-tablet.jpg    1x,
                         ./images/inspiration-tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="
                         ./images/inspiration-desktop.jpg    1x,
                         ./images/inspiration-desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <img
-                      src="./images/inspiration-desctop.jpg"
-                      alt="монитор apple"
-                      class="card__image"
-                    />
-                  </picture>
-                  <p class="card__overlay">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quae, atque saepe. Error laudantium iure odio delectus illum
-                    recusandae quia debitis earum nesciunt sequi eos molestiae
-                    repellat obcaecati provident, tempore dolor?
-                  </p>
-                </div>
-                <div class="card__meta">
-                  <h3 class="card__title">Inspiration has no Borders</h3>
-                  <p class="card__description">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="card">
-              <a href="#" class="card__project">
-                <div class="card__thumb">
-                  <picture>
-                    <source
-                      srcset="
+                      " media="(min-width: 1200px)" />
+                  <img src="./images/inspiration-desktop.jpg" alt="монитор apple" class="card__image" />
+                </picture>
+                <p class="card__overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quae, atque saepe. Error laudantium iure odio delectus illum
+                  recusandae quia debitis earum nesciunt sequi eos molestiae
+                  repellat obcaecati provident, tempore dolor?
+                </p>
+              </div>
+              <div class="card__meta">
+                <h3 class="card__title">Inspiration has no Borders</h3>
+                <p class="card__description">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="card__project">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="
                         ./images/limited-mobile.jpg    1x,
                         ./images/limited-mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(max-width: 767px)" />
+                  <source srcset="
                         ./images/limited-tablet.jpg    1x,
                         ./images/limited-tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="
                         ./images/limited-desktop.jpg    1x,
                         ./images/limited-desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <img
-                      src="./images/limited-desctop.jpg"
-                      alt="открытая книга"
-                      class="card__image"
-                    />
-                  </picture>
-                  <p class="card__overlay">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quae, atque saepe. Error laudantium iure odio delectus illum
-                    recusandae quia debitis earum nesciunt sequi eos molestiae
-                    repellat obcaecati provident, tempore dolor?
-                  </p>
-                </div>
-                <div class="card__meta">
-                  <h3 class="card__title">Издание Limited Edition</h3>
-                  <p class="card__description">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="card">
-              <a href="#" class="card__project">
-                <div class="card__thumb">
-                  <picture>
-                    <source
-                      srcset="
+                      " media="(min-width: 1200px)" />
+                  <img src="./images/limited-desktop.jpg" alt="открытая книга" class="card__image" />
+                </picture>
+                <p class="card__overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quae, atque saepe. Error laudantium iure odio delectus illum
+                  recusandae quia debitis earum nesciunt sequi eos molestiae
+                  repellat obcaecati provident, tempore dolor?
+                </p>
+              </div>
+              <div class="card__meta">
+                <h3 class="card__title">Издание Limited Edition</h3>
+                <p class="card__description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="card__project">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="
                         ./images/lab-mobile.jpg    1x,
                         ./images/lab-mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(max-width: 767px)" />
+                  <source srcset="
                         ./images/lab-tablet.jpg    1x,
                         ./images/lab-tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="
                         ./images/lab-desktop.jpg    1x,
                         ./images/lab-desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <img
-                      src="./images/lab-desctop.jpg"
-                      alt="бирка"
-                      class="card__image"
-                    />
-                  </picture>
-                  <p class="card__overlay">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quae, atque saepe. Error laudantium iure odio delectus illum
-                    recusandae quia debitis earum nesciunt sequi eos molestiae
-                    repellat obcaecati provident, tempore dolor?
-                  </p>
-                </div>
-                <div class="card__meta">
-                  <h3 class="card__title">Проект LAB</h3>
-                  <p class="card__description">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="card">
-              <a href="#" class="card__project">
-                <div class="card__thumb">
-                  <picture>
-                    <source
-                      srcset="
+                      " media="(min-width: 1200px)" />
+                  <img src="./images/lab-desktop.jpg" alt="бирка" class="card__image" />
+                </picture>
+                <p class="card__overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quae, atque saepe. Error laudantium iure odio delectus illum
+                  recusandae quia debitis earum nesciunt sequi eos molestiae
+                  repellat obcaecati provident, tempore dolor?
+                </p>
+              </div>
+              <div class="card__meta">
+                <h3 class="card__title">Проект LAB</h3>
+                <p class="card__description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="card__project">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="
                         ./images/growin-mobile.jpg    1x,
                         ./images/growin-mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(max-width: 767px)" />
+                  <source srcset="
                         ./images/growin-tablet.jpg    1x,
                         ./images/growin-tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                    />
-                    <source
-                      srcset="
+                      " media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="
                         ./images/growin-desktop.jpg    1x,
                         ./images/growin-desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <img
-                      src="./images/growin-tablet.jpg"
-                      alt="человек работет на ноутбуке"
-                      class="card__image"
-                    />
-                  </picture>
-                  <p class="card__overlay">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quae, atque saepe. Error laudantium iure odio delectus illum
-                    recusandae quia debitis earum nesciunt sequi eos molestiae
-                    repellat obcaecati provident, tempore dolor?
-                  </p>
-                </div>
-                <div class="card__meta">
-                  <h3 class="card__title">Growing Business</h3>
-                  <p class="card__description">Приложение</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <!-- Footer section -->
-    <footer class="footer">
-      <div class="container footer-container">
-        <div class="contact-block">
-          <a href="index.html" class="logo logo--footer"
-            >Web<span class="logo--light">Studio</span>
-          </a>
-          <address class="address">
-            <ul class="company-contacts list">
-              <li class="company-contacts__item">
-                <a
-                  href="https://goo.gl/maps/EXekWtUb8diJgZ9C8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="address__company"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li class="company-contacts__item">
-                <a
-                  class="company-contacts__link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com
-                </a>
-              </li>
-              <li class="company-contacts__item">
-                <a class="company-contacts__link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
-        <!-- Social links -->
-        <div class="join-social">
-          <h3 class="footer__title">Присоединяйтесь</h3>
-          <ul class="social-link list">
-            <li class="social-link__box">
-              <a
-                href="#"
-                class="social-link__link social-link__link--in-footer"
-              >
-                <svg class="social-link__icon" width="20" height="20">
-                  <use href="./images/icon.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-link__box">
-              <a
-                href="#"
-                class="social-link__link social-link__link--in-footer"
-              >
-                <svg class="social-link__icon" width="20" height="20">
-                  <use href="./images/icon.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-link__box">
-              <a
-                href="#"
-                class="social-link__link social-link__link--in-footer"
-              >
-                <svg class="social-link__icon" width="20" height="20">
-                  <use href="./images/icon.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-link__box">
-              <a
-                href="#"
-                class="social-link__link social-link__link--in-footer"
-              >
-                <svg class="social-link__icon" width="20" height="20">
-                  <use href="./images/icon.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Footer Subscribe-block -->
-        <div class="subscribe-block">
-          <h3 class="footer__title">Подпишитесь на рассылку</h3>
-          <form class="subscribe-form">
-            <input
-              type="email"
-              name="email-sub"
-              placeholder="E-mail"
-              class="subscribe-form__mail-input"
-              required
-            />
-            <button type="submit" class="button button--in-footer">
-              <span class="button__text">Подписаться</span>
-              <svg class="subscribe__icon" width="24" height="24">
-                <use href="./images/icon.svg#icon-telegram"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+                      " media="(min-width: 1200px)" />
+                  <img src="./images/growin-tablet.jpg" alt="человек работет на ноутбуке" class="card__image" />
+                </picture>
+                <p class="card__overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quae, atque saepe. Error laudantium iure odio delectus illum
+                  recusandae quia debitis earum nesciunt sequi eos molestiae
+                  repellat obcaecati provident, tempore dolor?
+                </p>
+              </div>
+              <div class="card__meta">
+                <h3 class="card__title">Growing Business</h3>
+                <p class="card__description">Приложение</p>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
+    </section>
+  </main>
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="contact-block">
+        <a href="index.html" class="logo logo--footer">Web<span class="logo--light">Studio</span>
+        </a>
+        <address class="address">
+          <ul class="company-contacts list">
+            <li class="company-contacts__item">
+              <a href="https://goo.gl/maps/EXekWtUb8diJgZ9C8" target="_blank" rel="noopener noreferrer"
+                class="address__company">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="company-contacts__item">
+              <a class="company-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com
+              </a>
+            </li>
+            <li class="company-contacts__item">
+              <a class="company-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <!-- Social links -->
+      <div class="join-social">
+        <h3 class="footer__title">Присоединяйтесь</h3>
+        <ul class="social-link list">
+          <li class="social-link__box">
+            <a href="#" class="social-link__link social-link__link--in-footer">
+              <svg class="social-link__icon" width="20" height="20">
+                <use href="./images/icon.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-link__box">
+            <a href="#" class="social-link__link social-link__link--in-footer">
+              <svg class="social-link__icon" width="20" height="20">
+                <use href="./images/icon.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-link__box">
+            <a href="#" class="social-link__link social-link__link--in-footer">
+              <svg class="social-link__icon" width="20" height="20">
+                <use href="./images/icon.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-link__box">
+            <a href="#" class="social-link__link social-link__link--in-footer">
+              <svg class="social-link__icon" width="20" height="20">
+                <use href="./images/icon.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Footer Subscribe-block -->
+      <div class="subscribe-block">
+        <h3 class="footer__title">Подпишитесь на рассылку</h3>
+        <form class="subscribe-form">
+          <input type="email" name="email-sub" placeholder="E-mail" class="subscribe-form__mail-input" required />
+          <button type="submit" class="button button--in-footer">
+            <span class="button__text">Подписаться</span>
+            <svg class="subscribe__icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Scripts -->
-    <!-- <script>
+  <!-- Scripts -->
+  <!-- <script>
       const { height: pageHeaderHeight } = document
         .querySelector(".header-section")
         .getBoundingClientRect();
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script> -->
-    <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
-  </body>
+  <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
+</body>
+
 </html>

@@ -51,14 +51,9 @@
 }
 
 .mobile-menu__link:hover,
-.mobile-menu__linkfocus {
-  color: $accent-color;
-}
-
+.mobile-menu__linkfocus,
 .mobile-menu__link--current {
   color: $accent-color;
-  display: block;
-  justify-content: center;
 }
 
 .mobile-menu__contact {
