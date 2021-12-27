@@ -49,11 +49,15 @@
   right: 8px;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-close:hover,
 .btn-close:focus {
   color: $accent-color;
+  border: 1px solid $accent-color;
 }
 
 .btn-close__close {
@@ -127,15 +131,12 @@
   transition: fill $animation-duration $cubic-bezier;
 }
 
-.form__input-field:hover,
 .form__input-field:focus,
-.form__textarea:hover,
 .form__textarea:focus {
   border-color: $accent-color;
   outline: none;
 }
 
-.form__input-field:hover + .form__icon,
 .form__input-field:focus + .form__icon {
   fill: $accent-color;
 }
@@ -143,6 +144,8 @@
 /* -- checkbox + license --- */
 .checkbox {
   margin: 0 0 30px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .checkbox__label {
@@ -164,23 +167,8 @@
     border $animation-duration $cubic-bezier;
 }
 
-.checkbox__focus {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  width: 448px;
-  height: 30px;
-  border: 2px solid $accent-color;
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity $animation-duration $cubic-bezier,
-    background-color $animation-duration $cubic-bezier,
-    border $animation-duration $cubic-bezier;
-}
 .checkbox__input {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -198,7 +186,7 @@
 }
 
 .checkbox__text {
-  padding: 0 0 0 10px;
+  padding: 0 10px 0 10px;
   margin: 0;
   font-size: 12px;
   line-height: 1.71;
